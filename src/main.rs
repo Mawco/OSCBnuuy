@@ -1,6 +1,5 @@
-use std::io::Error;
-
-use async_std::net::UdpSocket;
+use std::{io::Error, time::Duration};
+use async_std::{net::UdpSocket, task::sleep};
 use openvr::{init, ApplicationType, TrackingUniverseOrigin};
 use rosc::{OscMessage, encoder, OscPacket, OscType};
 
@@ -42,6 +41,8 @@ async fn main() -> Result<(), Error> {
                 )]
             })).unwrap();
             sock.send_to(&rot_z_msg, "127.0.0.1:9000").await?;
+            
+            sleep(Duration::from_secs_f64(1.0 / 60.0)).await;
             break;
         }
     }
