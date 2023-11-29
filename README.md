@@ -1,4 +1,11 @@
 # OSCBnuuy
 > I'm too lazy to write a readme so i might do it some other day (in 3 years)
 
-> Also, this software should probably not be used in it's current state. It is using loop which sends way too many packets and caused Unity to crash multiple times while i was working on it. Will fix it soon™️
+**Here's what it looks like in Unity**
+
+
+
+
+
+https://github.com/Mawco/OSCBnuuy/assets/37117103/a8a5fd40-583f-4602-82b6-ef0967844833
+
