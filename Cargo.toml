@@ -8,5 +8,6 @@ edition = "2021"
 [dependencies]
 async-std = { version = "1.12.0", features = ["attributes"] }
 cgmath = "0.18.0" 
+fti_osc = { git = "https://github.com/benaclejames/SimpleRustOSC.git", version = "1.0.0" }
 openvr = "0.6.0"
-phorcys-osc = { git = "https://github.com/kb10uy/phorcys.git", version = "0.1.0" }
+rosc = "0.10.1"
